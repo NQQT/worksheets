@@ -1,0 +1,2046 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`shape transformations — deterministic worksheets > continues one seeded stream across pages and preserves the first page 1`] = `
+[
+  {
+    "answer": "A, flip",
+    "id": 6,
+    "prompt": "Flip pentagon 4 top to bottom across the dashed horizontal line. Which option matches? __ Is this a flip or a turn? __",
+    "shapeTransformation": {
+      "guide": "horizontal",
+      "name": "pentagon 4",
+      "options": [
+        {
+          "label": "A",
+          "points": [
+            [
+              -2,
+              -3,
+            ],
+            [
+              -2,
+              1,
+            ],
+            [
+              0,
+              3,
+            ],
+            [
+              3,
+              1,
+            ],
+            [
+              1,
+              -3,
+            ],
+          ],
+        },
+        {
+          "label": "B",
+          "points": [
+            [
+              -3,
+              -2,
+            ],
+            [
+              1,
+              -2,
+            ],
+            [
+              3,
+              0,
+            ],
+            [
+              1,
+              3,
+            ],
+            [
+              -3,
+              1,
+            ],
+          ],
+        },
+        {
+          "label": "C",
+          "points": [
+            [
+              -2,
+              3,
+            ],
+            [
+              -2,
+              -1,
+            ],
+            [
+              0,
+              -3,
+            ],
+            [
+              3,
+              -1,
+            ],
+            [
+              1,
+              3,
+            ],
+          ],
+        },
+        {
+          "label": "D",
+          "points": [
+            [
+              2,
+              3,
+            ],
+            [
+              2,
+              -1,
+            ],
+            [
+              0,
+              -3,
+            ],
+            [
+              -3,
+              -1,
+            ],
+            [
+              -1,
+              3,
+            ],
+          ],
+        },
+      ],
+      "original": [
+        [
+          -2,
+          3,
+        ],
+        [
+          -2,
+          -1,
+        ],
+        [
+          0,
+          -3,
+        ],
+        [
+          3,
+          -1,
+        ],
+        [
+          1,
+          3,
+        ],
+      ],
+    },
+    "type": "transformations",
+  },
+  {
+    "answer": "B, turn",
+    "id": 7,
+    "prompt": "Rotate pentagon 2 90° clockwise (a quarter turn right) around the dot. Which option matches? __ Is this a flip or a turn? __",
+    "shapeTransformation": {
+      "guide": "centre",
+      "name": "pentagon 2",
+      "options": [
+        {
+          "label": "A",
+          "points": [
+            [
+              -2,
+              -3,
+            ],
+            [
+              -2,
+              1,
+            ],
+            [
+              0,
+              3,
+            ],
+            [
+              3,
+              1,
+            ],
+            [
+              1,
+              -3,
+            ],
+          ],
+        },
+        {
+          "label": "B",
+          "points": [
+            [
+              3,
+              2,
+            ],
+            [
+              -1,
+              2,
+            ],
+            [
+              -3,
+              0,
+            ],
+            [
+              -1,
+              -3,
+            ],
+            [
+              3,
+              -1,
+            ],
+          ],
+        },
+        {
+          "label": "C",
+          "points": [
+            [
+              -3,
+              -2,
+            ],
+            [
+              1,
+              -2,
+            ],
+            [
+              3,
+              0,
+            ],
+            [
+              1,
+              3,
+            ],
+            [
+              -3,
+              1,
+            ],
+          ],
+        },
+        {
+          "label": "D",
+          "points": [
+            [
+              2,
+              -3,
+            ],
+            [
+              2,
+              1,
+            ],
+            [
+              0,
+              3,
+            ],
+            [
+              -3,
+              1,
+            ],
+            [
+              -1,
+              -3,
+            ],
+          ],
+        },
+      ],
+      "original": [
+        [
+          2,
+          -3,
+        ],
+        [
+          2,
+          1,
+        ],
+        [
+          0,
+          3,
+        ],
+        [
+          -3,
+          1,
+        ],
+        [
+          -1,
+          -3,
+        ],
+      ],
+    },
+    "type": "transformations",
+  },
+  {
+    "answer": "A, flip",
+    "id": 8,
+    "prompt": "Flip triangle 3 top to bottom across the dashed horizontal line. Which option matches? __ Is this a flip or a turn? __",
+    "shapeTransformation": {
+      "guide": "horizontal",
+      "name": "triangle 3",
+      "options": [
+        {
+          "label": "A",
+          "points": [
+            [
+              3,
+              -2,
+            ],
+            [
+              -2,
+              -2,
+            ],
+            [
+              3,
+              1,
+            ],
+          ],
+        },
+        {
+          "label": "B",
+          "points": [
+            [
+              -2,
+              3,
+            ],
+            [
+              -2,
+              -2,
+            ],
+            [
+              1,
+              3,
+            ],
+          ],
+        },
+        {
+          "label": "C",
+          "points": [
+            [
+              -3,
+              2,
+            ],
+            [
+              2,
+              2,
+            ],
+            [
+              -3,
+              -1,
+            ],
+          ],
+        },
+        {
+          "label": "D",
+          "points": [
+            [
+              2,
+              -3,
+            ],
+            [
+              2,
+              2,
+            ],
+            [
+              -1,
+              -3,
+            ],
+          ],
+        },
+      ],
+      "original": [
+        [
+          3,
+          2,
+        ],
+        [
+          -2,
+          2,
+        ],
+        [
+          3,
+          -1,
+        ],
+      ],
+    },
+    "type": "transformations",
+  },
+  {
+    "answer": "C, flip",
+    "id": 9,
+    "prompt": "Flip triangle 4 top to bottom across the dashed horizontal line. Which option matches? __ Is this a flip or a turn? __",
+    "shapeTransformation": {
+      "guide": "horizontal",
+      "name": "triangle 4",
+      "options": [
+        {
+          "label": "A",
+          "points": [
+            [
+              -3,
+              -2,
+            ],
+            [
+              2,
+              -2,
+            ],
+            [
+              -3,
+              1,
+            ],
+          ],
+        },
+        {
+          "label": "B",
+          "points": [
+            [
+              2,
+              3,
+            ],
+            [
+              2,
+              -2,
+            ],
+            [
+              -1,
+              3,
+            ],
+          ],
+        },
+        {
+          "label": "C",
+          "points": [
+            [
+              -2,
+              -3,
+            ],
+            [
+              -2,
+              2,
+            ],
+            [
+              1,
+              -3,
+            ],
+          ],
+        },
+        {
+          "label": "D",
+          "points": [
+            [
+              -2,
+              3,
+            ],
+            [
+              -2,
+              -2,
+            ],
+            [
+              1,
+              3,
+            ],
+          ],
+        },
+      ],
+      "original": [
+        [
+          -2,
+          3,
+        ],
+        [
+          -2,
+          -2,
+        ],
+        [
+          1,
+          3,
+        ],
+      ],
+    },
+    "type": "transformations",
+  },
+  {
+    "answer": "A, turn",
+    "id": 10,
+    "prompt": "Rotate L-shape 2 90° clockwise (a quarter turn right) around the dot. Which option matches? __ Is this a flip or a turn? __",
+    "shapeTransformation": {
+      "guide": "centre",
+      "name": "L-shape 2",
+      "options": [
+        {
+          "label": "A",
+          "points": [
+            [
+              2,
+              3,
+            ],
+            [
+              0,
+              3,
+            ],
+            [
+              0,
+              -1,
+            ],
+            [
+              -2,
+              -1,
+            ],
+            [
+              -2,
+              -3,
+            ],
+            [
+              2,
+              -3,
+            ],
+          ],
+        },
+        {
+          "label": "B",
+          "points": [
+            [
+              -3,
+              -2,
+            ],
+            [
+              -3,
+              0,
+            ],
+            [
+              1,
+              0,
+            ],
+            [
+              1,
+              2,
+            ],
+            [
+              3,
+              2,
+            ],
+            [
+              3,
+              -2,
+            ],
+          ],
+        },
+        {
+          "label": "C",
+          "points": [
+            [
+              3,
+              2,
+            ],
+            [
+              3,
+              0,
+            ],
+            [
+              -1,
+              0,
+            ],
+            [
+              -1,
+              -2,
+            ],
+            [
+              -3,
+              -2,
+            ],
+            [
+              -3,
+              2,
+            ],
+          ],
+        },
+        {
+          "label": "D",
+          "points": [
+            [
+              -2,
+              -3,
+            ],
+            [
+              0,
+              -3,
+            ],
+            [
+              0,
+              1,
+            ],
+            [
+              2,
+              1,
+            ],
+            [
+              2,
+              3,
+            ],
+            [
+              -2,
+              3,
+            ],
+          ],
+        },
+      ],
+      "original": [
+        [
+          3,
+          -2,
+        ],
+        [
+          3,
+          0,
+        ],
+        [
+          -1,
+          0,
+        ],
+        [
+          -1,
+          2,
+        ],
+        [
+          -3,
+          2,
+        ],
+        [
+          -3,
+          -2,
+        ],
+      ],
+    },
+    "type": "transformations",
+  },
+]
+`;
+
+exports[`shape transformations — deterministic worksheets > pins a new refresh while leaving count and zero-count behavior deterministic 1`] = `
+[
+  {
+    "answer": "B, flip",
+    "id": 1,
+    "prompt": "Flip L-shape 3 left to right across the dashed vertical line. Which option matches? __ Is this a flip or a turn? __",
+    "shapeTransformation": {
+      "guide": "vertical",
+      "name": "L-shape 3",
+      "options": [
+        {
+          "label": "A",
+          "points": [
+            [
+              2,
+              -3,
+            ],
+            [
+              0,
+              -3,
+            ],
+            [
+              0,
+              1,
+            ],
+            [
+              -2,
+              1,
+            ],
+            [
+              -2,
+              3,
+            ],
+            [
+              2,
+              3,
+            ],
+          ],
+        },
+        {
+          "label": "B",
+          "points": [
+            [
+              -2,
+              3,
+            ],
+            [
+              0,
+              3,
+            ],
+            [
+              0,
+              -1,
+            ],
+            [
+              2,
+              -1,
+            ],
+            [
+              2,
+              -3,
+            ],
+            [
+              -2,
+              -3,
+            ],
+          ],
+        },
+        {
+          "label": "C",
+          "points": [
+            [
+              3,
+              -2,
+            ],
+            [
+              3,
+              0,
+            ],
+            [
+              -1,
+              0,
+            ],
+            [
+              -1,
+              2,
+            ],
+            [
+              -3,
+              2,
+            ],
+            [
+              -3,
+              -2,
+            ],
+          ],
+        },
+        {
+          "label": "D",
+          "points": [
+            [
+              2,
+              3,
+            ],
+            [
+              0,
+              3,
+            ],
+            [
+              0,
+              -1,
+            ],
+            [
+              -2,
+              -1,
+            ],
+            [
+              -2,
+              -3,
+            ],
+            [
+              2,
+              -3,
+            ],
+          ],
+        },
+      ],
+      "original": [
+        [
+          2,
+          3,
+        ],
+        [
+          0,
+          3,
+        ],
+        [
+          0,
+          -1,
+        ],
+        [
+          -2,
+          -1,
+        ],
+        [
+          -2,
+          -3,
+        ],
+        [
+          2,
+          -3,
+        ],
+      ],
+    },
+    "type": "transformations",
+  },
+  {
+    "answer": "D, turn",
+    "id": 2,
+    "prompt": "Rotate pentagon 2 90° clockwise (a quarter turn right) around the dot. Which option matches? __ Is this a flip or a turn? __",
+    "shapeTransformation": {
+      "guide": "centre",
+      "name": "pentagon 2",
+      "options": [
+        {
+          "label": "A",
+          "points": [
+            [
+              -2,
+              -3,
+            ],
+            [
+              -2,
+              1,
+            ],
+            [
+              0,
+              3,
+            ],
+            [
+              3,
+              1,
+            ],
+            [
+              1,
+              -3,
+            ],
+          ],
+        },
+        {
+          "label": "B",
+          "points": [
+            [
+              2,
+              3,
+            ],
+            [
+              2,
+              -1,
+            ],
+            [
+              0,
+              -3,
+            ],
+            [
+              -3,
+              -1,
+            ],
+            [
+              -1,
+              3,
+            ],
+          ],
+        },
+        {
+          "label": "C",
+          "points": [
+            [
+              2,
+              -3,
+            ],
+            [
+              2,
+              1,
+            ],
+            [
+              0,
+              3,
+            ],
+            [
+              -3,
+              1,
+            ],
+            [
+              -1,
+              -3,
+            ],
+          ],
+        },
+        {
+          "label": "D",
+          "points": [
+            [
+              3,
+              2,
+            ],
+            [
+              -1,
+              2,
+            ],
+            [
+              -3,
+              0,
+            ],
+            [
+              -1,
+              -3,
+            ],
+            [
+              3,
+              -1,
+            ],
+          ],
+        },
+      ],
+      "original": [
+        [
+          2,
+          -3,
+        ],
+        [
+          2,
+          1,
+        ],
+        [
+          0,
+          3,
+        ],
+        [
+          -3,
+          1,
+        ],
+        [
+          -1,
+          -3,
+        ],
+      ],
+    },
+    "type": "transformations",
+  },
+  {
+    "answer": "D, turn",
+    "id": 3,
+    "prompt": "Rotate L-shape 3 90° anticlockwise (a quarter turn left) around the dot. Which option matches? __ Is this a flip or a turn? __",
+    "shapeTransformation": {
+      "guide": "centre",
+      "name": "L-shape 3",
+      "options": [
+        {
+          "label": "A",
+          "points": [
+            [
+              2,
+              -3,
+            ],
+            [
+              0,
+              -3,
+            ],
+            [
+              0,
+              1,
+            ],
+            [
+              -2,
+              1,
+            ],
+            [
+              -2,
+              3,
+            ],
+            [
+              2,
+              3,
+            ],
+          ],
+        },
+        {
+          "label": "B",
+          "points": [
+            [
+              -3,
+              2,
+            ],
+            [
+              -3,
+              0,
+            ],
+            [
+              1,
+              0,
+            ],
+            [
+              1,
+              -2,
+            ],
+            [
+              3,
+              -2,
+            ],
+            [
+              3,
+              2,
+            ],
+          ],
+        },
+        {
+          "label": "C",
+          "points": [
+            [
+              -2,
+              3,
+            ],
+            [
+              0,
+              3,
+            ],
+            [
+              0,
+              -1,
+            ],
+            [
+              2,
+              -1,
+            ],
+            [
+              2,
+              -3,
+            ],
+            [
+              -2,
+              -3,
+            ],
+          ],
+        },
+        {
+          "label": "D",
+          "points": [
+            [
+              3,
+              -2,
+            ],
+            [
+              3,
+              0,
+            ],
+            [
+              -1,
+              0,
+            ],
+            [
+              -1,
+              2,
+            ],
+            [
+              -3,
+              2,
+            ],
+            [
+              -3,
+              -2,
+            ],
+          ],
+        },
+      ],
+      "original": [
+        [
+          2,
+          3,
+        ],
+        [
+          0,
+          3,
+        ],
+        [
+          0,
+          -1,
+        ],
+        [
+          -2,
+          -1,
+        ],
+        [
+          -2,
+          -3,
+        ],
+        [
+          2,
+          -3,
+        ],
+      ],
+    },
+    "type": "transformations",
+  },
+  {
+    "answer": "C, turn",
+    "id": 4,
+    "prompt": "Rotate L-shape 1 90° clockwise (a quarter turn right) around the dot. Which option matches? __ Is this a flip or a turn? __",
+    "shapeTransformation": {
+      "guide": "centre",
+      "name": "L-shape 1",
+      "options": [
+        {
+          "label": "A",
+          "points": [
+            [
+              2,
+              -3,
+            ],
+            [
+              0,
+              -3,
+            ],
+            [
+              0,
+              1,
+            ],
+            [
+              -2,
+              1,
+            ],
+            [
+              -2,
+              3,
+            ],
+            [
+              2,
+              3,
+            ],
+          ],
+        },
+        {
+          "label": "B",
+          "points": [
+            [
+              -3,
+              2,
+            ],
+            [
+              -3,
+              0,
+            ],
+            [
+              1,
+              0,
+            ],
+            [
+              1,
+              -2,
+            ],
+            [
+              3,
+              -2,
+            ],
+            [
+              3,
+              2,
+            ],
+          ],
+        },
+        {
+          "label": "C",
+          "points": [
+            [
+              3,
+              -2,
+            ],
+            [
+              3,
+              0,
+            ],
+            [
+              -1,
+              0,
+            ],
+            [
+              -1,
+              2,
+            ],
+            [
+              -3,
+              2,
+            ],
+            [
+              -3,
+              -2,
+            ],
+          ],
+        },
+        {
+          "label": "D",
+          "points": [
+            [
+              -2,
+              3,
+            ],
+            [
+              0,
+              3,
+            ],
+            [
+              0,
+              -1,
+            ],
+            [
+              2,
+              -1,
+            ],
+            [
+              2,
+              -3,
+            ],
+            [
+              -2,
+              -3,
+            ],
+          ],
+        },
+      ],
+      "original": [
+        [
+          -2,
+          -3,
+        ],
+        [
+          0,
+          -3,
+        ],
+        [
+          0,
+          1,
+        ],
+        [
+          2,
+          1,
+        ],
+        [
+          2,
+          3,
+        ],
+        [
+          -2,
+          3,
+        ],
+      ],
+    },
+    "type": "transformations",
+  },
+  {
+    "answer": "D, turn",
+    "id": 5,
+    "prompt": "Rotate L-shape 1 90° anticlockwise (a quarter turn left) around the dot. Which option matches? __ Is this a flip or a turn? __",
+    "shapeTransformation": {
+      "guide": "centre",
+      "name": "L-shape 1",
+      "options": [
+        {
+          "label": "A",
+          "points": [
+            [
+              3,
+              -2,
+            ],
+            [
+              3,
+              0,
+            ],
+            [
+              -1,
+              0,
+            ],
+            [
+              -1,
+              2,
+            ],
+            [
+              -3,
+              2,
+            ],
+            [
+              -3,
+              -2,
+            ],
+          ],
+        },
+        {
+          "label": "B",
+          "points": [
+            [
+              -2,
+              3,
+            ],
+            [
+              0,
+              3,
+            ],
+            [
+              0,
+              -1,
+            ],
+            [
+              2,
+              -1,
+            ],
+            [
+              2,
+              -3,
+            ],
+            [
+              -2,
+              -3,
+            ],
+          ],
+        },
+        {
+          "label": "C",
+          "points": [
+            [
+              2,
+              -3,
+            ],
+            [
+              0,
+              -3,
+            ],
+            [
+              0,
+              1,
+            ],
+            [
+              -2,
+              1,
+            ],
+            [
+              -2,
+              3,
+            ],
+            [
+              2,
+              3,
+            ],
+          ],
+        },
+        {
+          "label": "D",
+          "points": [
+            [
+              -3,
+              2,
+            ],
+            [
+              -3,
+              0,
+            ],
+            [
+              1,
+              0,
+            ],
+            [
+              1,
+              -2,
+            ],
+            [
+              3,
+              -2,
+            ],
+            [
+              3,
+              2,
+            ],
+          ],
+        },
+      ],
+      "original": [
+        [
+          -2,
+          -3,
+        ],
+        [
+          0,
+          -3,
+        ],
+        [
+          0,
+          1,
+        ],
+        [
+          2,
+          1,
+        ],
+        [
+          2,
+          3,
+        ],
+        [
+          -2,
+          3,
+        ],
+      ],
+    },
+    "type": "transformations",
+  },
+]
+`;
+
+exports[`shape transformations — deterministic worksheets > pins every prompt, answer, guide and option vertex on the first sheet 1`] = `
+[
+  {
+    "answer": "C, flip",
+    "id": 1,
+    "prompt": "Flip pentagon 4 left to right across the dashed vertical line. Which option matches? __ Is this a flip or a turn? __",
+    "shapeTransformation": {
+      "guide": "vertical",
+      "name": "pentagon 4",
+      "options": [
+        {
+          "label": "A",
+          "points": [
+            [
+              -2,
+              3,
+            ],
+            [
+              -2,
+              -1,
+            ],
+            [
+              0,
+              -3,
+            ],
+            [
+              3,
+              -1,
+            ],
+            [
+              1,
+              3,
+            ],
+          ],
+        },
+        {
+          "label": "B",
+          "points": [
+            [
+              -2,
+              -3,
+            ],
+            [
+              -2,
+              1,
+            ],
+            [
+              0,
+              3,
+            ],
+            [
+              3,
+              1,
+            ],
+            [
+              1,
+              -3,
+            ],
+          ],
+        },
+        {
+          "label": "C",
+          "points": [
+            [
+              2,
+              3,
+            ],
+            [
+              2,
+              -1,
+            ],
+            [
+              0,
+              -3,
+            ],
+            [
+              -3,
+              -1,
+            ],
+            [
+              -1,
+              3,
+            ],
+          ],
+        },
+        {
+          "label": "D",
+          "points": [
+            [
+              -3,
+              -2,
+            ],
+            [
+              1,
+              -2,
+            ],
+            [
+              3,
+              0,
+            ],
+            [
+              1,
+              3,
+            ],
+            [
+              -3,
+              1,
+            ],
+          ],
+        },
+      ],
+      "original": [
+        [
+          -2,
+          3,
+        ],
+        [
+          -2,
+          -1,
+        ],
+        [
+          0,
+          -3,
+        ],
+        [
+          3,
+          -1,
+        ],
+        [
+          1,
+          3,
+        ],
+      ],
+    },
+    "type": "transformations",
+  },
+  {
+    "answer": "B, flip",
+    "id": 2,
+    "prompt": "Flip triangle 1 top to bottom across the dashed horizontal line. Which option matches? __ Is this a flip or a turn? __",
+    "shapeTransformation": {
+      "guide": "horizontal",
+      "name": "triangle 1",
+      "options": [
+        {
+          "label": "A",
+          "points": [
+            [
+              3,
+              -2,
+            ],
+            [
+              -2,
+              -2,
+            ],
+            [
+              3,
+              1,
+            ],
+          ],
+        },
+        {
+          "label": "B",
+          "points": [
+            [
+              -3,
+              2,
+            ],
+            [
+              2,
+              2,
+            ],
+            [
+              -3,
+              -1,
+            ],
+          ],
+        },
+        {
+          "label": "C",
+          "points": [
+            [
+              -3,
+              -2,
+            ],
+            [
+              2,
+              -2,
+            ],
+            [
+              -3,
+              1,
+            ],
+          ],
+        },
+        {
+          "label": "D",
+          "points": [
+            [
+              -2,
+              3,
+            ],
+            [
+              -2,
+              -2,
+            ],
+            [
+              1,
+              3,
+            ],
+          ],
+        },
+      ],
+      "original": [
+        [
+          -3,
+          -2,
+        ],
+        [
+          2,
+          -2,
+        ],
+        [
+          -3,
+          1,
+        ],
+      ],
+    },
+    "type": "transformations",
+  },
+  {
+    "answer": "D, turn",
+    "id": 3,
+    "prompt": "Rotate L-shape 1 90° anticlockwise (a quarter turn left) around the dot. Which option matches? __ Is this a flip or a turn? __",
+    "shapeTransformation": {
+      "guide": "centre",
+      "name": "L-shape 1",
+      "options": [
+        {
+          "label": "A",
+          "points": [
+            [
+              2,
+              -3,
+            ],
+            [
+              0,
+              -3,
+            ],
+            [
+              0,
+              1,
+            ],
+            [
+              -2,
+              1,
+            ],
+            [
+              -2,
+              3,
+            ],
+            [
+              2,
+              3,
+            ],
+          ],
+        },
+        {
+          "label": "B",
+          "points": [
+            [
+              -2,
+              -3,
+            ],
+            [
+              0,
+              -3,
+            ],
+            [
+              0,
+              1,
+            ],
+            [
+              2,
+              1,
+            ],
+            [
+              2,
+              3,
+            ],
+            [
+              -2,
+              3,
+            ],
+          ],
+        },
+        {
+          "label": "C",
+          "points": [
+            [
+              3,
+              -2,
+            ],
+            [
+              3,
+              0,
+            ],
+            [
+              -1,
+              0,
+            ],
+            [
+              -1,
+              2,
+            ],
+            [
+              -3,
+              2,
+            ],
+            [
+              -3,
+              -2,
+            ],
+          ],
+        },
+        {
+          "label": "D",
+          "points": [
+            [
+              -3,
+              2,
+            ],
+            [
+              -3,
+              0,
+            ],
+            [
+              1,
+              0,
+            ],
+            [
+              1,
+              -2,
+            ],
+            [
+              3,
+              -2,
+            ],
+            [
+              3,
+              2,
+            ],
+          ],
+        },
+      ],
+      "original": [
+        [
+          -2,
+          -3,
+        ],
+        [
+          0,
+          -3,
+        ],
+        [
+          0,
+          1,
+        ],
+        [
+          2,
+          1,
+        ],
+        [
+          2,
+          3,
+        ],
+        [
+          -2,
+          3,
+        ],
+      ],
+    },
+    "type": "transformations",
+  },
+  {
+    "answer": "B, flip",
+    "id": 4,
+    "prompt": "Flip pentagon 1 top to bottom across the dashed horizontal line. Which option matches? __ Is this a flip or a turn? __",
+    "shapeTransformation": {
+      "guide": "horizontal",
+      "name": "pentagon 1",
+      "options": [
+        {
+          "label": "A",
+          "points": [
+            [
+              3,
+              -2,
+            ],
+            [
+              -1,
+              -2,
+            ],
+            [
+              -3,
+              0,
+            ],
+            [
+              -1,
+              3,
+            ],
+            [
+              3,
+              1,
+            ],
+          ],
+        },
+        {
+          "label": "B",
+          "points": [
+            [
+              -3,
+              2,
+            ],
+            [
+              1,
+              2,
+            ],
+            [
+              3,
+              0,
+            ],
+            [
+              1,
+              -3,
+            ],
+            [
+              -3,
+              -1,
+            ],
+          ],
+        },
+        {
+          "label": "C",
+          "points": [
+            [
+              -2,
+              3,
+            ],
+            [
+              -2,
+              -1,
+            ],
+            [
+              0,
+              -3,
+            ],
+            [
+              3,
+              -1,
+            ],
+            [
+              1,
+              3,
+            ],
+          ],
+        },
+        {
+          "label": "D",
+          "points": [
+            [
+              2,
+              -3,
+            ],
+            [
+              2,
+              1,
+            ],
+            [
+              0,
+              3,
+            ],
+            [
+              -3,
+              1,
+            ],
+            [
+              -1,
+              -3,
+            ],
+          ],
+        },
+      ],
+      "original": [
+        [
+          -3,
+          -2,
+        ],
+        [
+          1,
+          -2,
+        ],
+        [
+          3,
+          0,
+        ],
+        [
+          1,
+          3,
+        ],
+        [
+          -3,
+          1,
+        ],
+      ],
+    },
+    "type": "transformations",
+  },
+  {
+    "answer": "B, flip",
+    "id": 5,
+    "prompt": "Flip L-shape 4 top to bottom across the dashed horizontal line. Which option matches? __ Is this a flip or a turn? __",
+    "shapeTransformation": {
+      "guide": "horizontal",
+      "name": "L-shape 4",
+      "options": [
+        {
+          "label": "A",
+          "points": [
+            [
+              -3,
+              2,
+            ],
+            [
+              -3,
+              0,
+            ],
+            [
+              1,
+              0,
+            ],
+            [
+              1,
+              -2,
+            ],
+            [
+              3,
+              -2,
+            ],
+            [
+              3,
+              2,
+            ],
+          ],
+        },
+        {
+          "label": "B",
+          "points": [
+            [
+              -3,
+              -2,
+            ],
+            [
+              -3,
+              0,
+            ],
+            [
+              1,
+              0,
+            ],
+            [
+              1,
+              2,
+            ],
+            [
+              3,
+              2,
+            ],
+            [
+              3,
+              -2,
+            ],
+          ],
+        },
+        {
+          "label": "C",
+          "points": [
+            [
+              2,
+              3,
+            ],
+            [
+              0,
+              3,
+            ],
+            [
+              0,
+              -1,
+            ],
+            [
+              -2,
+              -1,
+            ],
+            [
+              -2,
+              -3,
+            ],
+            [
+              2,
+              -3,
+            ],
+          ],
+        },
+        {
+          "label": "D",
+          "points": [
+            [
+              3,
+              2,
+            ],
+            [
+              3,
+              0,
+            ],
+            [
+              -1,
+              0,
+            ],
+            [
+              -1,
+              -2,
+            ],
+            [
+              -3,
+              -2,
+            ],
+            [
+              -3,
+              2,
+            ],
+          ],
+        },
+      ],
+      "original": [
+        [
+          -3,
+          2,
+        ],
+        [
+          -3,
+          0,
+        ],
+        [
+          1,
+          0,
+        ],
+        [
+          1,
+          -2,
+        ],
+        [
+          3,
+          -2,
+        ],
+        [
+          3,
+          2,
+        ],
+      ],
+    },
+    "type": "transformations",
+  },
+]
+`;

@@ -1,0 +1,95 @@
+# GitHub Pages deployment for the worksheets distribution (repo: NQQT/worksheets).
+#
+# Pattern: same artifact-based Pages flow as distribution/maths and
+# distribution/english (both copied from distribution/story-generator/
+# .github/workflows/deploy.yml), rather than the gh-pages-branch flow used by
+# distribution/comfy-dashboard, because the story-generator history showed the
+# branch-based pipeline is flaky (gh-pages updated but Pages never rebuilt).
+# The artifact flow publishes dist/ directly through actions/deploy-pages@v4
+# and does NOT depend on a gh-pages branch or "Deploy from a branch" builds.
+# The manual `yarn deploy` script in package.json (gh-pages -d dist) stays the
+# sibling-consistent local fallback; CI does not use it.
+#
+# ONE-TIME REPO SETTING (required, not per-deploy):
+#   Settings → Pages → Build and deployment → Source: "GitHub Actions"
+# Live site: https://NQQT.github.io/worksheets/
+#
+# Dependency notes:
+# - This is a STANDALONE nested repo on GitHub (no monorepo parent), so a
+#   plain `npm install` must resolve everything on its own — it does:
+#   @presource/core and @presource/react are declared with "*" and both
+#   resolve from the public npm registry (verified 2026-10-23 against
+#   registry.npmjs.org: dist-tags.latest = 1.0.2 for both, matching the local
+#   workspace package versions; no auth/token needed). react, react-dom and
+#   every devDependency are public npm packages too.
+# - No @underload/service strip step needed here: this package.json depends
+#   only on react, react-dom, @presource/core and @presource/react.
+# - tsconfig.json is self-contained (monorepo root options inlined instead of
+#   `extends: "../../tsconfig.json"`) — in a standalone checkout the parent
+#   path is outside the repo and builtin:vite-transform aborts the build with
+#   "Tsconfig not found" (the CI failure class fixed in NQQT/maths).
+# - vite.config.ts sets `base: './'` so the bundle works from the
+#   https://NQQT.github.io/worksheets/ subpath without hardcoding the repo
+#   name.
+# - --legacy-peer-deps: npm's strict peer resolver crashes with "Cannot read
+#   properties of null (reading 'edgesOut')" on this dependency tree
+#   (vitest 4 + jsdom peer sets); matches the local .npmrc setting and the
+#   maths/english convention.
+
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  # Allow manual runs from the Actions tab.
+  workflow_dispatch:
+
+# deploy-pages@v4 needs id-token (OIDC) + pages write; checkout needs read.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One deploy at a time; new pushes cancel in-flight deploys
+# (same concurrency guard the working story-generator uses).
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+
+      - name: Install dependencies
+        run: npm install --no-package-lock --no-audit --no-fund --legacy-peer-deps
+
+      - name: Build
+        run: npm run build
+
+      # Artifact-based Pages publishing: configure-pages reads/applies repo
+      # Pages settings, upload-pages-artifact packages dist/, deploy-pages
+      # publishes it in the deploy job below.
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
