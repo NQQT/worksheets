@@ -23,8 +23,10 @@ export default defineConfig({
         // (chained macrotasks, framework/loader.ts). Tests that await the
         // FULL picker (all plugins loaded) sit on that whole chain — when the
         // monorepo test run goes wide (yarn runs every workspace in parallel)
-        // the 5s default testTimeout is not enough headroom. 15s keeps a
-        // margin without masking hangs.
-        testTimeout: 15000,
+        // the 5s default testTimeout is not enough headroom. 15s kept a
+        // margin until the run grew past it (full-load sweeps like
+        // layout-capacity now exceed it); 60s keeps a margin without
+        // masking hangs.
+        testTimeout: 60000,
     },
 });
